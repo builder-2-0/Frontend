@@ -1,0 +1,39 @@
+@import url(https://db.onlinewebfonts.com/c/b5dc5645d8bcfd701cdc1edd93253de2?family=ABC+Diatype+Medium);
+@import "tailwindcss";
+
+
+body{
+  font-family: "ABC Diatype Medium";
+  background-image: url("/background.png");
+  inset:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: glitch 4s infinite;
+
+
+  
+  
+}
+
+@keyframes glitch{
+    0%,100%{
+        transform:translate(0);
+        filter:hue-rotate(0deg);
+    }
+
+    2%{
+        transform:translate(-6px,2px);
+    }
+
+    3%{
+        transform:translate(5px,-2px);
+    }
+
+    4%{
+        transform:translate(0);
+    }
+
+    50%{
+        filter:hue-rotate(10deg) saturate(1.2);
+    }
+}
